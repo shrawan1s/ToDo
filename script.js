@@ -115,7 +115,7 @@ function updateNote(noteId, title, description) {
     addBtn.innerText = "UPDATE TASK";
 }
 
-
+// Function to clear the existing data
 function clearData() {
     titleTag.value = "";
     descTag.value = "";

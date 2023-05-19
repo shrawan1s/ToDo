@@ -181,8 +181,23 @@ textarea {
 }
 
 .details {
-    padding: 10px 20px;
+    padding: 5px 0;
+    margin-right: 20px;
     color: #0E1525;
+    overflow: auto;
+}
+
+::-webkit-scrollbar {
+    height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(241, 240, 240);
+    border-radius: 8px;
+}
+
+.details:hover::-webkit-scrollbar {
+    height: 8px;
 }
 
 .details>p {
