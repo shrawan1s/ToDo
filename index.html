@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="showNotes()">
+    <div class="main-container">
+        <div class="heading text-center">
+            <h1>ToDo - Focus on Your Priority</h1>
+        </div>
+
+        <div class="container">
+            <div class="btn" id="add">
+                <i class="fa-solid fa-plus"></i>
+                <p>ADD A TASK</p>
+            </div>
+            <div class="btn" id="remove">
+                <i class="fa-solid fa-close"></i>
+                <p>CLEAR ALL</p>
+            </div>
+        </div>
+
+        <div class="blank" id="blank"></div>
+        <div class="task-form" id="task_form">
+            <header>
+                <p id="frmTitle">ADD A TASK</p>
+                <i class="fa-solid fa-xmark" id="close"></i>
+            </header>
+
+            <form action="#">
+                <div class="form-control title">
+                    <label for="title">Title</label>
+                    <input id="title" type="text" name="title" placeholder="Enter your task title">
+                </div>
+
+                <div class="form-control desc">
+                    <label for="desc">Description</label>
+                    <textarea id="description" name="desc" placeholder="Enter your task description"></textarea>
+                </div>
+                <button id="addBtn">ADD TASK</button>
+            </form>
+        </div>
+
+        <div class="tasks" id="tasks">
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/816cc84c30.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

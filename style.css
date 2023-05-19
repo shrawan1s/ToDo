@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0E1525;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.main-container {
+    margin-bottom: 20px;
+}
+
+.heading {
+    margin: 30px auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    background: white;
+}
+
+.fa-solid {
+    font-size: 5rem;
+    color: #0053a6;
+    cursor: pointer;
+}
+
+.btn p {
+    color: black !important;
+}
+
+.btn:hover {
+    transition: all .2s ease-in;
+    transform: translateY(-3px);
+}
+
+.task-form {
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    max-width: 30rem;
+    width: 100%;
+    margin: auto;
+    color: black;
+    border-radius: 5px;
+    z-index: 2;
+}
+
+.task-form header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+    border-bottom: 2px solid #e4e4e4;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.task-form header i {
+    font-size: 1.3rem;
+    color: black;
+}
+
+.task-form form {
+    padding: 0 20px;
+}
+
+::placeholder {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.2rem;
+}
+
+.task-form form label {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    margin-top: 15px;
+}
+
+.desc {
+    margin-top: 20px;
+}
+
+input[type=text] {
+    font-size: 20px;
+    height: 3rem;
+    padding: 0 15px;
+    outline: none;
+}
+
+textarea {
+    font-size: 20px;
+    outline: none;
+    height: 10rem;
+    padding: 10px 15px 0 15px;
+    resize: none;
+}
+
+.task-form form button {
+    margin: 25px 0 30px 0;
+    height: 2.5rem;
+    width: 100%;
+    background: #37FF8B;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.show {
+    top: 50%;
+    left: 50%;
+    transition: all .5s ease-in-out;
+}
+
+.blank {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: .3;
+}
+
+.zindex {
+    z-index: 1;
+    transition: all .1s ease-in-out;
+}
+
+.tasks {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem 15px 0px 15px;
+    max-width: 100%;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.note {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(255, 226, 140, 0.902);
+    padding: 5px 10px;
+    margin: 10px 5px;
+    max-width: 800px;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.details {
+    padding: 10px 20px;
+    color: #0E1525;
+}
+
+.details>p {
+    font-size: 22px;
+    font-weight: 900;
+}
+
+.details>span {
+    display: block;
+    margin: 5px 0;
+}
+
+.fa {
+    color: white;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 40px;
+    gap: 5px;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: green;
+    height: 30px;
+    width: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit {
+    background-color: greenyellow;
+}
+
+.delete {
+    background-color: red;
+}
+
+@media screen and (max-width:600px) {
+    .container {
+        gap: 15px;
+    }
+
+    .btn {
+        width: 7rem;
+        height: 6rem;
+    }
+
+    .fa-solid {
+        font-size: 3rem;
+    }
+
+    .tasks {
+        flex-wrap: wrap;
+        min-width: 300px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
