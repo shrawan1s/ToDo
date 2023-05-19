@@ -12,6 +12,8 @@ const frmtitle = document.getElementById("frmTitle");
 
 // Event listner to show the form
 add.addEventListener("click", () => {
+    frmtitle.innerText = "ADD A TASK";
+    addBtn.innerText = "ADD TASK";
     task_form.classList.add("show")
     blank.classList.add("zindex")
     titleTag.innerText = ""
@@ -109,8 +111,8 @@ function updateNote(noteId, title, description) {
     add.click();
     titleTag.value = title;
     descTag.value = description;
-    frmtitle.innerHTML = "Update a Note";
-    addBtn.innerText = "Update Note";
+    frmtitle.innerText = "UPDATE A TASK";
+    addBtn.innerText = "UPDATE TASK";
 }
 
 
